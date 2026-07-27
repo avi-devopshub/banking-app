@@ -11,3 +11,10 @@ def get_transaction_history(transactions):
         return []
 
     return transactions
+
+
+def export_transactions(transactions):
+    if not transactions:
+        return "No Transactions"
+
+    return "\n".join(transactions)
